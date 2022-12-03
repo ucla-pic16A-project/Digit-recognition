@@ -20,4 +20,10 @@ def read_from_csv():
     X = pd.read_csv(path_data)
     y = pd.read_csv(path_result)
     return X,y
+
+def read_data():
+    if not os.path.isfile(os.getcwd() + '/data.csv'):
+        export_csv()
+    X, y = read_from_csv()
+    return X,y
     
