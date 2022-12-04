@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from sklearn.model_selection import train_test_split
 from sklearn.datasets import fetch_openml
 
 def read_from_openml():
@@ -22,8 +23,13 @@ def read_from_csv():
     return X,y
 
 def read_data():
-    if not os.path.isfile(os.getcwd() + '/data.csv'):
+    try:
+        X, y = read_from_csv()
+        return X,y
+    except FileNotFoundError:
         export_csv()
-    X, y = read_from_csv()
-    return X,y
+    # if not os.path.isfile(os.getcwd() + '/data.csv'):
+    #     export_csv()
+    # X, y = read_from_csv()
+    # return X,y
     
