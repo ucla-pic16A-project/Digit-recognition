@@ -30,18 +30,18 @@ class image_process:
                     print('Too big! Not enought iamges.', file=sys.stderr)
                     return
 
-    def confusion_matrix(y_train, predict):
+    def confusion_matrix(y_test, predict, model='Digit Recognition'):
         '''creats a confusion matrix for the dataset
 
         Args:
             y_train (_type_): _description_
-            predict (_type_): model.predict(X_train)
+            predict (_type_): model.predict(X_test)
         '''
-        matrix = metrics.confusion_matrix(y_train, predict)
+        matrix = metrics.confusion_matrix(y_test, predict)
 
         plt.figure(figsize=(6,6))
         plt.imshow(matrix,cmap=plt.cm.Blues)
-        plt.title("Confusion Matrix for MNIST Data")
+        plt.title("Confusion Matrix for " + model)
         plt.xticks(np.arange(10))
         plt.yticks(np.arange(10))
         plt.ylabel('Actual Label')
