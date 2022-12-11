@@ -7,7 +7,7 @@ Contributors: Haoyu Li, Tong Xie, Judy Zhu
 <!-- GETTING STARTED -->
 ## Overview
 
-The objective of this project is to classify hand-written digits from 0 to 9 using various machine learning models and compare their efficiency.
+The objective of this project is to classify hand-written digits from 0 to 9 using various machine learning models and compare their efficiency. Four models are selected for analysis: **Logistic Regression, MLP, Random Forest Classifier, KNN**. A manual implementation of Logistic Regression is also included for binary classification.
 
 
 ### Requirements
@@ -21,8 +21,9 @@ The objective of this project is to classify hand-written digits from 0 to 9 usi
 * [OpenML Dataset](https://www.openml.org/d/554) - Dataset for Digit Recognition
 
 
+<!-- Data Intro -->
 ## Data Exploration
-The dataset is a collection of 70,000 handwritten digits ranging from 0 to 9. Image of each data point is 28 pixels wide and long, which gives the total of 28x28=724 pixels. The 724 pixels make up the 724 features of a data point and each feature stores a value ranging from 0 to 1 to indicate the handwritting.
+The dataset is a collection of 70,000 handwritten digits ranging from 0 to 9. Image of each data point is 28 pixels wide and long, which gives the total of 28 x 28 = 724 pixels. The 724 pixels make up the 724 features of a data point and each feature stores a value ranging from 0 to 1 to indicate the handwritting.
 
 Examples of data point images
 ![image](https://user-images.githubusercontent.com/117710195/206927660-c0333f6d-948b-41e1-b0c3-50015441df1d.png)
@@ -32,11 +33,31 @@ Spliting the dataset into features X and label y
 <img width="161" alt="y" src="https://user-images.githubusercontent.com/117710195/206927690-7ea0263c-986b-4a8a-98f8-285c57193065.png">
 
 
+<!-- Model Training -->
 ## Model Training
-Four classification models are selected: Logistic Regression, Multilayer Perceptron, Random Forest Classifier, K-nearest Neighbors
+The **70/30 train_test_split** is performed before fitting the models. <br />
+
+X_train <br />
+<img width="1307" alt="image" src="https://user-images.githubusercontent.com/117710195/206931660-ea530241-8516-49a7-aff7-6fe2464afe41.png"> <br />
+
+y_train <br />
+<img width="234" alt="image" src="https://user-images.githubusercontent.com/117710195/206931681-25b385ff-1f60-4ee2-8801-ba1beb27fb33.png">
+
+Shape of X_train, y_train <br />
+<img width="169" alt="image" src="https://user-images.githubusercontent.com/117710195/206931717-67602c4e-29a8-40bb-b264-92e78803e565.png">
+
+Four classification models (Logistic Regression, MLP, Random Forest Classifier, KNN) are trained using _model.fit(X_train, y_train)_ <br />
+The corresponding scores are then calculated using _model.score(X_test, y_test)_
+
 
 <!-- Performance Analysis -->
 ## Performance Analysis
+
+### Accuracy Scores
+1. Logistic Regression: 0.91614
+2. Multilayer Perceptron: 0.97452
+3. Random Forest Classifier: 0.96795
+4. K-nearest Neighbors: 0.97086
 
 ### Confusion Matrices
 Visualize and compare the performance of models used
@@ -51,8 +72,17 @@ Visualize and compare the performance of models used
 Overall, the four different classification models used all show higher inaccurary with predicting digits 2, 3, and 8.
 
 
-### Efficiency Analysis
+
+<!-- Efficiency -->
+## Efficiency Analysis
 This section analyzes the efficiency of the four models by comparing their accuracy score and execution time. <br />
+
+### Execution Times (Seconds)
+1. Logistic Regression: 54.3764
+2. Multilayer Perceptron: 51.386
+3. Random Forest Classifier: 21.981
+4. K-nearest Neighbors: 36.4333
+
 <img width="1209" alt="image" src="https://user-images.githubusercontent.com/117710195/206930061-0d2ff940-593e-48ac-aa27-58a4a47e19e0.png"> <br />
 
 ***How to interprete these histograms?***
