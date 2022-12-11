@@ -24,10 +24,50 @@ The objective of this project is to classify hand-written digits from 0 to 9 usi
 ## Data Exploration
 The dataset is a collection of 70,000 handwritten digits ranging from 0 to 9. Image of each data point is 28 pixels wide and long, which gives the total of 28x28=724 pixels. The 724 pixels make up the 724 features of a data point and each feature stores a value ranging from 0 to 1 to indicate the handwritting.
 
-Spliting the dataset into features X and label y:
+Examples of data point images
+![image](https://user-images.githubusercontent.com/117710195/206927660-c0333f6d-948b-41e1-b0c3-50015441df1d.png)
+
+Spliting the dataset into features X and label y
 <img width="1305" alt="X" src="https://user-images.githubusercontent.com/117710195/206927242-24fecc98-e3bc-43b4-89b6-273570403ba1.png">
+<img width="161" alt="y" src="https://user-images.githubusercontent.com/117710195/206927690-7ea0263c-986b-4a8a-98f8-285c57193065.png">
 
 
+## Model Training
+Four classification models are selected: Logistic Regression, Multilayer Perceptron, Random Forest Classifier, K-nearest Neighbors
+
+<!-- Performance Analysis -->
+## Performance Analysis
+
+### Confusion Matrices
+Visualize and compare the performance of models used
+
+<img width="1204" alt="Screen Shot 2022-12-11 at 1 05 08 PM" src="https://user-images.githubusercontent.com/117710195/206928747-b4e52f5e-4c10-410b-8eeb-0db494da7994.png">
+
+***How to interprete these matrices?***
+1. For entry i, j in the matrix, the number in it represents the number of predicts which has predicted label i and actual label j.
+2. As can be seen in the color bar on the right hand side, darker blue means more, so we can see most of samples are predicted correctly for all the models.
+3. One particularly intresting thing is that, it seems that our models are good at predicting different kinds of numbers, for example, logistic regression often confuses between 1 and 8, but random forest and KNN did super good on it.
+
+Overall, the four different classification models used all show higher inaccurary with predicting digits 2, 3, and 8.
+
+
+### Efficiency Analysis
+This section analyzes the efficiency of the four models by comparing their accuracy score and execution time. <br />
+<img width="1209" alt="image" src="https://user-images.githubusercontent.com/117710195/206930061-0d2ff940-593e-48ac-aa27-58a4a47e19e0.png"> <br />
+
+***How to interprete these histograms?***
+1. It seems that logistic regression is bad in this particular dataset. It's not that accurate, and takes a long time...
+2. Multilayer perceptron is good in performance, but in the same time it's quite time consuming. I guess that's like a typical neural network behavior, which seems to take a lot of resourses.
+3. KNN and Random Forest seems to be the best algorithms to employ here. They both have good performance (KNN is slightly higher but within range of error), and they are both resource friendly.
+
+
+<img width="544" alt="image" src="https://user-images.githubusercontent.com/117710195/206930171-75786f4c-18ee-41c6-a7dd-441bd1b7ccda.png">
+
+***How to interprete  this scatter plot?*** 
+1. This graph plots one time behavior (score vs. time) for all four classification models
+2. Points closer to the bottom right have higher efficiency (high accuracy score + short execution time)
+
+According to the metrics of accuracy score and execution time, **K-nearest Neighbors** and **Random Forest Classifier** appear to be the best-performing models out of the four utilized in this project. To further extend the study, other prevailing models for image classification such as Convolutional Neural Network (CNN) may also be included for analysis.
 
 
 ## Scope and Limitations
