@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 
 # Digit Recognition
 Contributors: Haoyu Li, Tong Xie, Judy Zhu
@@ -23,7 +24,8 @@ The objective of this project is to classify hand-written digits from 0 to 9 usi
 
 <!-- Data Intro -->
 ## Data Exploration
-The dataset is a collection of 70,000 handwritten digits ranging from 0 to 9. Image of each data point is 28 pixels wide and long, which gives the total of 28 x 28 = 724 pixels. The 724 pixels make up the 724 features of a data point and each feature stores a value ranging from 0 to 1 to indicate the handwritting.
+The dataset is a collection of 70,000 handwritten digits ranging from 0 to 9. <br /> <br />
+Image of each data point is 28 pixels wide and long, which gives the total of 28 x 28 = 724 pixels. The 724 pixels make up the 724 features of a data point and each feature stores a value ranging from 0 to 1 to indicate the handwritting.
 
 Examples of data point images
 ![image](https://user-images.githubusercontent.com/117710195/206927660-c0333f6d-948b-41e1-b0c3-50015441df1d.png)
@@ -91,6 +93,7 @@ This section analyzes the efficiency of the four models by comparing their accur
 3. KNN and Random Forest seems to be the best algorithms to employ here. They both have good performance (KNN is slightly higher but within range of error), and they are both resource friendly.
 
 
+### Efficiency Plot <br />
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/117710195/206930171-75786f4c-18ee-41c6-a7dd-441bd1b7ccda.png">
 
 ***How to interprete  this scatter plot?*** 
