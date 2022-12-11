@@ -10,7 +10,7 @@ Contributors: Haoyu Li, Tong Xie, Judy Zhu
 The objective of this project is to classify hand-written digits from 0 to 9 using various machine learning models and compare their efficiency.
 
 
-### Prerequisites
+### Requirements
 
 * [Numpy (1.21.5)](http://www.numpy.org/) - Multidimensioanl Mathematical Computing
 * [Pandas (1.4.2)](https://pandas.pydata.org/docs/getting_started/overview.html#) - Access Tabular data
