@@ -21,12 +21,10 @@ The objective of this project is to classify hand-written digits from 0 to 9 usi
 * [OpenML Dataset](https://www.openml.org/d/554) - Dataset for Digit Recognition
 
 
+## Data Exploration
+The dataset is a collection of 70,000 handwritten digits ranging from 0 to 9. Image of each data point is 28 pixels wide and long, which gives the total of 28x28=724 pixels. The 724 pixels make up the 724 features of a data point and each feature stores a value ranging from 0 to 1 to indicate the handwritting.
 
-
-
-
-
-
+Spliting the dataset into features X and label y:
 
 
 
