@@ -30,7 +30,7 @@ class image_process:
                     print('Too big! Not enought iamges.', file=sys.stderr)
                     return
 
-    def confusion_matrix(y_test, predict, model='Digit Recognition'):
+    def confusion_matrix(self, y_test, predict, model='Digit Recognition'):
         '''creats a confusion matrix for the dataset
 
         Args:

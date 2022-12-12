@@ -9,24 +9,36 @@ Contributors: Haoyu Li, Tong Xie, Judy Zhu
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Overview</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Requirements</a></li>
+      </ul>
+      <ul>
+        <li><a href="#dataset">Dataset</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Data Exploration</a>
+    </li>
+    <li><a href="#usage">Model Training</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#hello1">Accuracy Scores</a></li>
+      </ul>
+      <ul>
+        <li><a href="hello2">Confusion Matrices</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#roadmap">Efficiency Anlysis</a>
+      <ul>
+        <li><a href="#hello3">Execution Times</a></li>
+      </ul>
+      <ul>
+        <li><a href="#hello4">Efficiency Plot</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Scope and Limitations</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Reference and Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -34,7 +46,7 @@ Contributors: Haoyu Li, Tong Xie, Judy Zhu
 <!-- GETTING STARTED -->
 ## Overview
 
-The objective of this project is to classify hand-written digits from 0 to 9 using various machine learning models and compare their efficiency. Four models are selected for analysis: **Logistic Regression, MLP, Random Forest Classifier, KNN**. A manual implementation of Logistic Regression is also included for binary classification.
+The objective of this project is to classify hand-written digits from 0 to 9 using various machine learning models and compare their efficiency. Four models are selected for analysis: **Logistic Regression, MLP, Random Forest Classifier, KNN**. A manual implementation of Logistic Regression is also included for binary classification to compare with the package logistic regression function.
 
 
 ### Requirements
@@ -122,18 +134,25 @@ This section analyzes the efficiency of the four models by comparing their accur
 ### Efficiency Plot <br />
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/117710195/206930171-75786f4c-18ee-41c6-a7dd-441bd1b7ccda.png">
 
-***How to interprete  this scatter plot?*** 
+***How to interprete this scatter plot?*** 
 1. This graph plots one time behavior (score vs. time) for all four classification models
 2. Points closer to the bottom right have higher efficiency (high accuracy score + short execution time)
 
 According to the metrics of accuracy score and execution time, **K-nearest Neighbors** and **Random Forest Classifier** appear to be the best-performing models out of the four utilized in this project. To further extend the study, other prevailing models for image classification such as Convolutional Neural Network (CNN) may also be included for analysis.
 
 
+
+<!-- Logistic regression -->
+## Comparison between Handwritten and Package Function
+We implemented a binary logistic regression classifier based on gradient descent. Then we compared this handwritten class performance with the sklearn package logistic regression function with solver liblinear. 
+
+### Accuracy Matrices
+
 ## Scope and Limitations
 1. This method of digit recognition has errors and might results in incorrection preditions of the handwrittings compared to classification by humans. This misinformation may cause issues when working with real-life applications that require high accuracy in data recognition.
 2. The current sample database is limited to the handwritting styles collected. Therefore may not be applicable to certain texts or may result in highly inaccurate predictions.
 3. To enhance the performance of this model, more complex and extensive database that contains diverse handwritting styles should be included. 
-4. Potential extension of this project may include generalizing the recognition for other handwritten characters, such as alphabets, mathematical symbols, calligraphy, and foreigns characters.
+4. Potential extension of this project may include generalizing the recognition for numbers with more digits, other handwritten characters, such as alphabets, mathematical symbols, calligraphy, and foreigns characters.
 
 
 <!-- LICENSE -->
