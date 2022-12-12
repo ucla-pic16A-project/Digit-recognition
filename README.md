@@ -147,6 +147,13 @@ According to the metrics of accuracy score and execution time, **K-nearest Neigh
 We implemented a binary logistic regression classifier based on gradient descent. Then we compared this handwritten class performance with the sklearn package logistic regression function with solver liblinear. 
 
 ### Accuracy Matrices
+<img width="500" alt="handwritten" src="https://user-images.githubusercontent.com/108601140/206944681-f0ebb919-3383-4b01-84a7-6ce5c21dfc7c.png">
+<img width="500" alt="package" src="https://user-images.githubusercontent.com/108601140/206945695-f58bb3c0-5deb-4382-a571-68e03c7cca91.png">
+
+***How to interprete these two matrices?***
+1. Overall I think the handwritten model did fairly well in predicting data, the accuracy achived by the library function is only slightly better.
+2. It's interesting to see that both the handwritten models and the provided models are weak in classifying between certain numbers like 3 and 5. 
+3. However, a major drawback for the handwritten naive version is that the time performace is much weaker than the library function, and I belive that makes sense.
 
 ## Scope and Limitations
 1. This method of digit recognition has errors and might results in incorrection preditions of the handwrittings compared to classification by humans. This misinformation may cause issues when working with real-life applications that require high accuracy in data recognition.
