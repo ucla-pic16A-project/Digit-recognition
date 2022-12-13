@@ -194,10 +194,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * [CS229.stanford.edu](https://cs229.stanford.edu/) - Some theoretical concepts of Logistic Regression
 * [UCLA Math156 Notes](https://github.com/HanbaekLyu/Math156_UCLA_SP21/blob/main/LectureNotes/lecturenote_156.pdf) - Background knowledge on implementation of Logistic Regression in Python
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <a name="Demo Video"></a>
 ## Demo Video
 The following is the link for our demo video of the project, which consists of a short overview of the project and a presentation of our final result:
-[https://youtu.be/gQkJ8r02l98](https://youtu.be/WCYJ7D4p3pY)
+[Project Demo Video](https://youtu.be/WCYJ7D4p3pY)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
