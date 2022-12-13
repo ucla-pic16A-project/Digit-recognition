@@ -46,6 +46,7 @@ Contributors: Haoyu Li, Tong Xie, Judy Zhu
     <li><a href="#limit">Scope and Limitations</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Reference and Acknowledgments</a></li>
+    <li><a href="#demo">Demo Video</a></li>
   </ol>
 </details>
 
@@ -195,7 +196,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * [UCLA Math156 Notes](https://github.com/HanbaekLyu/Math156_UCLA_SP21/blob/main/LectureNotes/lecturenote_156.pdf) - Background knowledge on implementation of Logistic Regression in Python
 
 
-<a name="Demo Video"></a>
+<a name="demo"></a>
 ## Demo Video
 The following is the link for our demo video of the project, which consists of a short overview of the project and a presentation of our final result:
 [Project Demo Video](https://youtu.be/WCYJ7D4p3pY)
