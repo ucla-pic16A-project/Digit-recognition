@@ -199,5 +199,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a name="Demo Video"></a>
 ## Demo Video
-The following is the link for our demo video of the project:
-https://youtu.be/gQkJ8r02l98
+The following is the link for our demo video of the project, which consists of a short overview of the project and a presentation of our final result:
+[https://youtu.be/gQkJ8r02l98](https://youtu.be/WCYJ7D4p3pY)
