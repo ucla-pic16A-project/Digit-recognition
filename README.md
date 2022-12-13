@@ -59,7 +59,7 @@ The objective of this project is to classify hand-written digits from 0 to 9 usi
 <a name="built-with"></a>
 ### Requirements
 
-* [Numpy (1.21.5)](http://www.numpy.org/) - Multidimensioanl Mathematical Computing
+* [Numpy (1.21.5)](http://www.numpy.org/) - Multidimensional Mathematical Computing
 * [Pandas (1.4.2)](https://pandas.pydata.org/docs/getting_started/overview.html#) - Access Tabular data
 * [Matplotlib (3.5.1)](https://matplotlib.org/contents.html) - Used to plot Graph
 * [Sklearn (1.0.2)](https://scikit-learn.org/stable/) - Machine learning models
